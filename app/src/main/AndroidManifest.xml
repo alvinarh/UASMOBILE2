@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.scanqrcode">
+    package="com.example.scanqrcode" >
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -13,7 +13,8 @@
         android:roundIcon="@drawable/ic_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.ScanQRCode"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true" >
+
         <activity
             android:name=".TambahBarang"
             android:exported="false" />
@@ -22,13 +23,17 @@
             android:exported="false" />
         <activity
             android:name=".ScanQrCode"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

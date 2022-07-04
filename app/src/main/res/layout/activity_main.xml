@@ -22,7 +22,6 @@
 
         />
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcylrBarang"
         android:padding="@dimen/_16sdp"
@@ -33,36 +32,27 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="@dimen/_16sdp"
         android:layout_alignParentBottom="true"
-        >
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Scanner"
-            android:onClick="scanner"
-            android:fontFamily="@font/popmed"
-            android:layout_marginRight="@dimen/_10sdp"
-            android:textSize="@dimen/_9sdp"
-            android:textAllCaps="false"
-            />
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Tambah Data Barang"
-            android:onClick="addData"
             android:fontFamily="@font/popmed"
-            android:textSize="@dimen/_9sdp"
+            android:onClick="addData"
+            android:text="Tambah Data Barang"
             android:textAllCaps="false"
-            />
+            android:textSize="@dimen/_9sdp" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        method finish();>
+</ImageButton>
+    />
 
 </RelativeLayout>
-
